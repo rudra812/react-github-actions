@@ -1,5 +1,8 @@
 name: first workflow
-on: push
+on: 
+  push:
+  pull_request: 
+
 
 jobs:
     first-job:
