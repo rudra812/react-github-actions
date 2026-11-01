@@ -1,5 +1,11 @@
 name: first workflow
-on: push
+on: 
+  push:
+  pull_request: 
+    # branches: 
+    #   - master
+    #   - dev
+    #   - qa
 
 jobs:
     first-job:
