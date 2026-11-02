@@ -24,5 +24,11 @@ jobs:
             - name: Install dependency
               run: npm ci
 
+            - name: ES-lint
+              run: npm run lint
+
+            - name: unit test case
+              run: npm test
+
             - name: make react build
               run: npm run build
