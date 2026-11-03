@@ -76,7 +76,10 @@ jobs:
                   name: react-build
                   path: dist/
                   retention-days: 7
-
+            
+            - name: Install vercel
+              run: npm i -g vercel
+              
             - name: deploy in vercel
               run: vercel --prod --yes --token="${{secrets.VERCEL_REACT_TOKEN}}"
 
